@@ -19,5 +19,10 @@ stringRandom.ALPHANUMERIC_CHARS =
 
 stringRandom.HEXADECIMAL_CHARS = '0123456789abcdef';
 
+stringRandom.NUMERIC_CHARS = '0123456789';
+
 stringRandom.hexadecimal = (length = stringRandom.DEFAULT_LENGTH): string =>
   stringRandom(length, stringRandom.HEXADECIMAL_CHARS);
+
+stringRandom.numeric = (length = stringRandom.DEFAULT_LENGTH): string =>
+  stringRandom(length, stringRandom.NUMERIC_CHARS);
